@@ -51,7 +51,7 @@ ya sea tu máquina o un servidor, lo cual nos abre las puertas para poder
 interactuar con el sistema en sí, archivos, redes, ...
 
 Diseñar tu propia librería es una experiencia fundamental para cualquier
-desarrollador porque que te obliga a pensar en la interfaz (API) de tus
+desarrollador porque te obliga a pensar en la interfaz (API) de tus
 _módulos_ y cómo será usado por otros developers. Debes tener especial
 consideración en peculiaridades del lenguaje, convenciones y buenas prácticas.
 
@@ -595,6 +595,8 @@ una ruta fija e imprimir su contenido en la consola con un `console.log`.
 
 La librería nativa `FS` (FileSystem) te será de utilidad.
 
+** No usar __readFileSync__.
+
 ### Averigua la extensión de un archivo
 
 Ya sabiendo leer un archivo, aventúrate a conocer cual
@@ -613,6 +615,8 @@ primero debes poder verlos.
 Intenta imprimir en consola la lista de archivos en una carpeta.
 
 La librería `FS` también te será útil aquí.
+
+Para simplificar la recursividad, te recomendamos usar __readdirSync__.
 
 ### Une dos rutas
 
@@ -635,13 +639,13 @@ Este proyecto se ha de resolver de forma casi natural con
 
 ¿Por qué?.
 
-Porque no conocemos realmente cuantas carpetas y archivos
+Porque no conocemos realmente cuántas carpetas y archivos
 tendremos que recorrer antes de terminar.
 
 Si recibes una ruta de carpeta, no sabrás de ante mano si
 dentro hay más carpetas o muchos archivos.
 
-Por ello, asegurate bien de entender de qué trata la
+Por ello, asegúrate bien de entender de qué trata la
 recursividad y ver algunos ejemplos.
 
 Entre los recursos de este proyecto hay un video que te ayudará.
