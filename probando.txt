@@ -1,0 +1,3 @@
+Estoy comenzando a probar cómo leer un archivo
+
+Tengo varias lineas 
